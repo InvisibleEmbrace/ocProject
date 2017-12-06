@@ -1,7 +1,6 @@
 package com.online.college.service;
 
 import com.online.college.pojo.ConstsSiteCarousel;
-import com.online.college.pojo.ConstsSiteCarouselServiceImpl;
 
 import java.util.List;
 

@@ -1,17 +1,14 @@
 package com.online.college.business.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.online.college.business.IPortalBusiness;
 import com.online.college.dao.CourseMapper;
 import com.online.college.ov.ConstsClassifyVO;
 import com.online.college.pojo.ConstsClassify;
-import com.online.college.pojo.ConstsClassifyExample;
 import com.online.college.pojo.Course;
 import com.online.college.service.IConstsClassifyService;
 import com.online.college.service.ICourseService;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
