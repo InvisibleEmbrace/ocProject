@@ -1,7 +1,9 @@
 package com.online.college.pojo;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
+import java.util.Date;
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class UserCollections {
     private Integer id;
 
