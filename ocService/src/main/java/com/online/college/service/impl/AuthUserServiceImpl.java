@@ -39,4 +39,13 @@ public class AuthUserServiceImpl implements IAuthUserService {
         }
         return authUserList;
     }
+
+    @Override
+    public AuthUser getByUsername(String username) {
+        AuthUser user = authUserMapper.getByUsername(username);
+        if (user != null) {
+            user.setHeader(QiniuStorage.getUrl(user.getHeader()));
+        }
+        return user;
+    }
 }

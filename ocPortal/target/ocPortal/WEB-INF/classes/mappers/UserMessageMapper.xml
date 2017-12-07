@@ -38,8 +38,8 @@
       del)
     values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{sendUserId,jdbcType=INTEGER}, 
       #{sendUserName,jdbcType=VARCHAR}, #{refId,jdbcType=VARCHAR}, #{refContent,jdbcType=VARCHAR}, 
-      #{type,jdbcType=BIT}, #{status,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, 
-      #{createUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, 
+      #{type,jdbcType=BIT}, #{status,jdbcType=BIT}, now(), 
+      #{createUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP},now(), 
       #{del,jdbcType=BIT})
   </insert>
   <insert id="insertSelective" parameterType="com.online.college.pojo.UserMessage" >
@@ -111,7 +111,7 @@
         #{status,jdbcType=BIT},
       </if>
       <if test="createTime != null" >
-        #{createTime,jdbcType=TIMESTAMP},
+        now(),
       </if>
       <if test="createUser != null" >
         #{createUser,jdbcType=VARCHAR},
@@ -120,7 +120,7 @@
         #{updateTime,jdbcType=TIMESTAMP},
       </if>
       <if test="updateUser != null" >
-        #{updateUser,jdbcType=VARCHAR},
+       now(),
       </if>
       <if test="del != null" >
         #{del,jdbcType=BIT},
@@ -161,7 +161,7 @@
         update_time = #{updateTime,jdbcType=TIMESTAMP},
       </if>
       <if test="updateUser != null" >
-        update_user = #{updateUser,jdbcType=VARCHAR},
+        update_user =now(),
       </if>
       <if test="del != null" >
         del = #{del,jdbcType=BIT},
@@ -181,7 +181,7 @@
       create_time = #{createTime,jdbcType=TIMESTAMP},
       create_user = #{createUser,jdbcType=VARCHAR},
       update_time = #{updateTime,jdbcType=TIMESTAMP},
-      update_user = #{updateUser,jdbcType=VARCHAR},
+      update_user =now(),
       del = #{del,jdbcType=BIT}
     where id = #{id,jdbcType=INTEGER}
   </update>

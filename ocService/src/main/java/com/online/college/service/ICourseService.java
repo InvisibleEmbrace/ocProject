@@ -39,4 +39,19 @@ public interface ICourseService {
      * @return
      */
     PageInfo<Course> queryCourseByClassify(String curCode, String curSubCode, Integer pageNum, Integer pageSize, String sort);
+
+    /**
+     * 根据id获取课程
+     * @param id
+     * @return
+     */
+    Course getById(Integer id);
+
+    /**
+     * 根据二级分类推荐课程
+     *
+     * @param subClassify
+     * @return
+     */
+    List<Course> queryCourseBySubClassify(String subClassify,Integer pageNum,Integer pageSize);
 }

@@ -18,4 +18,6 @@ public interface AuthUserMapper {
     int updateByPrimaryKey(AuthUser record);
 
     List<AuthUser> queryRecomd();
+
+    AuthUser getByUsername(String username);
 }

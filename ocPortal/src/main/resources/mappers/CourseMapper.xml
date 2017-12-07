@@ -64,8 +64,8 @@
       #{subClassifyName,jdbcType=VARCHAR}, #{direction,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, 
       #{level,jdbcType=BIT}, #{free,jdbcType=BIT}, #{price,jdbcType=DECIMAL}, #{time,jdbcType=VARCHAR}, 
       #{onsale,jdbcType=BIT}, #{picture,jdbcType=VARCHAR}, #{recommend,jdbcType=BIT}, 
-      #{weight,jdbcType=INTEGER}, #{studyCount,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
-      #{createUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, 
+      #{weight,jdbcType=INTEGER}, #{studyCount,jdbcType=INTEGER}, now(), 
+      #{createUser,jdbcType=VARCHAR}, now(), #{updateUser,jdbcType=VARCHAR}, 
       #{del,jdbcType=BIT}, #{brief,jdbcType=LONGVARCHAR})
   </insert>
     <insert id="insertSelective" parameterType="com.online.college.pojo.Course">
@@ -200,13 +200,13 @@
                 #{studyCount,jdbcType=INTEGER},
             </if>
             <if test="createTime != null">
-                #{createTime,jdbcType=TIMESTAMP},
+                now(),
             </if>
             <if test="createUser != null">
                 #{createUser,jdbcType=VARCHAR},
             </if>
             <if test="updateTime != null">
-                #{updateTime,jdbcType=TIMESTAMP},
+                now(),
             </if>
             <if test="updateUser != null">
                 #{updateUser,jdbcType=VARCHAR},
@@ -280,7 +280,7 @@
                 create_user = #{createUser,jdbcType=VARCHAR},
             </if>
             <if test="updateTime != null">
-                update_time = #{updateTime,jdbcType=TIMESTAMP},
+                update_time = now(),
             </if>
             <if test="updateUser != null">
                 update_user = #{updateUser,jdbcType=VARCHAR},
@@ -315,7 +315,7 @@
       study_count = #{studyCount,jdbcType=INTEGER},
       create_time = #{createTime,jdbcType=TIMESTAMP},
       create_user = #{createUser,jdbcType=VARCHAR},
-      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      update_time = now(),
       update_user = #{updateUser,jdbcType=VARCHAR},
       del = #{del,jdbcType=BIT},
       brief = #{brief,jdbcType=LONGVARCHAR}
@@ -342,7 +342,7 @@
       study_count = #{studyCount,jdbcType=INTEGER},
       create_time = #{createTime,jdbcType=TIMESTAMP},
       create_user = #{createUser,jdbcType=VARCHAR},
-      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      update_time = now(),
       update_user = #{updateUser,jdbcType=VARCHAR},
       del = #{del,jdbcType=BIT}
     where id = #{id,jdbcType=INTEGER}
@@ -371,14 +371,21 @@
     <select id="queryCourseByClassify" parameterType="map" resultMap="BaseResultMap">
         SELECT
         <include refid="Base_Column_List"/>
-          FROM t_course
+        FROM t_course
         <where>
             <if test="curCode != null and curCode != '-1'">
-               classify = #{curCode}
+                classify = #{curCode}
             </if>
             <if test="curSubCode != null and curSubCode != '-2'">
                 AND sub_classify = #{curSubCode}
             </if>
         </where>
+    </select>
+    <select id="queryCourseBySubClassify" parameterType="string" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_course
+        WHERE sub_classify = #{subClassify}
+        ORDER BY weight
     </select>
 </mapper>

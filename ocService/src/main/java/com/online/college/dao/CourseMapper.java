@@ -27,4 +27,6 @@ public interface CourseMapper {
     List<Course> queryCourseByType(String courseType);
 
     List<Course> queryCourseByClassify(@Param("curCode") String curCode, @Param("curSubCode") String curSubCode);
+
+    List<Course> queryCourseBySubClassify(String subClassify);
 }

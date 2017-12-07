@@ -6,8 +6,10 @@ import com.github.pagehelper.PageInfo;
 import com.online.college.dao.CourseMapper;
 import com.online.college.pojo.Course;
 import com.online.college.service.ICourseService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +44,7 @@ public class CourseServiceImpl implements ICourseService {
     }
 
     @Override
-    public PageInfo<Course> queryCourseByClassify(String curCode, String curSubCode, Integer pageNum, Integer pageSize,String sort) {
+    public PageInfo<Course> queryCourseByClassify(String curCode, String curSubCode, Integer pageNum, Integer pageSize, String sort) {
         if (pageSize != null) {
             PageHelper.startPage(pageNum, pageSize);
         }
@@ -56,5 +58,18 @@ public class CourseServiceImpl implements ICourseService {
         List<Course> courseList = courseMapper.queryCourseByClassify(curCode, curSubCode);
         PageInfo<Course> coursePageInfo = new PageInfo<>(courseList);
         return coursePageInfo;
+    }
+
+    @Override
+    public Course getById(Integer id) {
+        return courseMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public List<Course> queryCourseBySubClassify(String subClassify, Integer pageNum, Integer pageSize) {
+        if (pageNum != null && pageSize != null) {
+            PageHelper.startPage(pageNum, pageSize);
+        }
+        return courseMapper.queryCourseBySubClassify(subClassify);
     }
 }
