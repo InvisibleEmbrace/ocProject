@@ -48,4 +48,19 @@ public class AuthUserServiceImpl implements IAuthUserService {
         }
         return user;
     }
+
+    @Override
+    public AuthUser getById(Integer userId) {
+        return authUserMapper.selectByPrimaryKey(userId);
+    }
+
+    @Override
+    public AuthUser getByUsernameAndPassword(AuthUser authUser) {
+        return authUserMapper.getByUsernameAndPassword(authUser.getUsername(), authUser.getPassword());
+    }
+
+    @Override
+    public void insert(AuthUser authUser) {
+        authUserMapper.insertSelective(authUser);
+    }
 }

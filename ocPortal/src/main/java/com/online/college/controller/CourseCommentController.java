@@ -1,25 +1,21 @@
 package com.online.college.controller;
 
 import com.github.pagehelper.PageInfo;
-import com.online.college.common.storage.QiniuStorage;
 import com.online.college.common.web.JsonView;
 import com.online.college.common.web.SessionContext;
+import com.online.college.pojo.AuthUser;
 import com.online.college.pojo.CourseComment;
 import com.online.college.pojo.CourseSection;
 import com.online.college.service.IAuthUserService;
 import com.online.college.service.ICourseCommentService;
 import com.online.college.service.ICourseSectionService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 @RequestMapping("/courseComment")
@@ -95,11 +91,13 @@ public class CourseCommentController {
         } else {
             CourseSection courseSection = iCourseSectionService.getById(entity.getSectionId());
             if (courseSection != null) {
+                Integer userId = SessionContext.getUserId();
+                AuthUser user = iAuthUserService.getById(userId);
                 entity.setSectionTitle(courseSection.getName());
                 entity.setToUsername(entity.getCreateUser());//toUsername可以作为页面入参
-                entity.setUsername(SessionContext.getUsername());
-                entity.setCreateUser(SessionContext.getUsername());
-                entity.setUpdateUser(SessionContext.getUsername());
+                entity.setUsername(user.getUsername());
+                entity.setCreateUser(user.getUsername());
+                entity.setUpdateUser(user.getUsername());
 
                 iCourseCommentService.insertCourseComment(entity);
                 return new JsonView(0).toString();

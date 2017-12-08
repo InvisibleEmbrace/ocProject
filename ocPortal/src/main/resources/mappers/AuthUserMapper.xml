@@ -385,4 +385,10 @@
         FROM t_auth_user
         WHERE username = #{username}
     </select>
+    <select id="getByUsernameAndPassword" parameterType="map" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_auth_user
+        WHERE username = #{username} AND password = #{username}
+    </select>
 </mapper>

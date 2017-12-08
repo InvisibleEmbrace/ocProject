@@ -5,6 +5,7 @@ import com.online.college.pojo.AuthUser;
 import java.util.List;
 
 public interface IAuthUserService {
+
     AuthUser getUser(int id);
 
     /**
@@ -19,5 +20,16 @@ public interface IAuthUserService {
      */
     AuthUser getByUsername(String username);
 
+    AuthUser getById(Integer userId);
+
+    /**
+     * 根据username和password获取
+     **/
+    AuthUser getByUsernameAndPassword(AuthUser authUser);
+
+    /**
+     * 创建用户
+     */
+    void insert(AuthUser authUser);
 
 }

@@ -11,13 +11,8 @@
     <link href="../../res/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="../../res/css/reset.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="../../res/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../res/js/jquery.form.js"></script>
     <script type="text/javascript" src="../../res/js/bootstrap.min.js"></script>
-
-    <!--[if lt IE 9]>
-    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <link rel="icon" type="image/png" href="../../res/i/ico.png" sizes="16x16">
     <script type="text/javascript">
         CONETXT_PATH = '';
@@ -195,7 +190,7 @@
                 <textarea id="content" name="content" rows="" cols="100"></textarea>
                 <div>
                     <input id="indeityCode" name="indeityCode"  type="text" placeholder="请输入验证码">
-                    <img  onclick="reloadIndityImg();" id="indeityImg"  src="${s.base}/tools/identiry/code" style="width:80px;height:26px;margin-left:10px;margin-top:-3px;"/>
+                    <img  onclick="reloadIndityImg();" id="indeityImg"  src="${s.base}/tools/identiry/code.html" style="width:80px;height:26px;margin-left:10px;margin-top:-3px;"/>
                 </div>
             </form>
             <input type="button" value="发布" class="btn" onclick="doComment();">
@@ -204,124 +199,38 @@
     </div>
 
     <!-- 章节-start -->
-    <div class="main-course-right">
+    <div class="main-course-right"  >
         <h4 class="mt-50">所有章节</h4>
         <div class="video-course-fix-parent">
             <div class="video-course-fix">
-                <div class="chapter" style="padding: 0px ;border: none;">
-                    <a href="javascript:void(0);" class="js-open">
-                        <h3>
-                            <strong>第1章 课程介绍</strong>
-                            <span class="drop-down">▼</span>
-                        </h3>
-                    </a>
-                    <ul class="chapter-sub" style="padding-left:10px;">
-                        <a href="../course/video.html">
-                            <li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍
-                                (06:46)
-                            </li>
-                        </a>
-
-                        <a href="/video/13038">
-                            <li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2
-                                包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="chapter" style="padding: 0px ;border: none;">
-                    <a href="javascript:void(0);" class="js-open">
-                        <h3>
-                            <strong>第2章 课程介绍</strong>
-                            <span class="drop-down">▼</span>
-                        </h3>
-                    </a>
-                    <ul class="chapter-sub" style="padding-left:10px;">
-                        <a href="../course/video.html">
-                            <li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍
-                                (06:46)
-                            </li>
-                        </a>
-
-                        <a href="/video/13038">
-                            <li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2
-                                包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="chapter" style="padding: 0px ;border: none;">
-                    <a href="javascript:void(0);" class="js-open">
-                        <h3>
-                            <strong>第3章 课程介绍</strong>
-                            <span class="drop-down">▼</span>
-                        </h3>
-                    </a>
-                    <ul class="chapter-sub" style="padding-left:10px;">
-                        <a href="../course/video.html">
-                            <li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍
-                                (06:46)
-                            </li>
-                        </a>
-
-                        <a href="/video/13038">
-                            <li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2
-                                包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="chapter" style="padding: 0px ;border: none;">
-                    <a href="javascript:void(0);" class="js-open">
-                        <h3>
-                            <strong>第4章 课程介绍</strong>
-                            <span class="drop-down">▼</span>
-                        </h3>
-                    </a>
-                    <ul class="chapter-sub" style="padding-left:10px;">
-                        <a href="../course/video.html">
-                            <li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍
-                                (06:46)
-                            </li>
-                        </a>
-
-                        <a href="/video/13038">
-                            <li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2
-                                包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="chapter" style="padding: 0px ;border: none;">
-                    <a href="javascript:void(0);" class="js-open">
-                        <h3>
-                            <strong>第5章 课程介绍</strong>
-                            <span class="drop-down">▼</span>
-                        </h3>
-                    </a>
-                    <ul class="chapter-sub" style="padding-left:10px;">
-                        <a href="../course/video.html">
-                            <li class="ellipsis video-li"><i class="icon-video">▶</i> 1-1 使用RecyclerView优雅实现复杂布局-课程介绍
-                                (06:46)
-                            </li>
-                        </a>
-
-                        <a href="/video/13038">
-                            <li class="ellipsis  video-li"><i class="icon-video">▶</i> 1-2
-                                包括录制到文件、播放文件，可以实现类似于微信的语音消息发送与播放 (06:46)
-                            </li>
-                        </a>
-                    </ul>
-                </div>
+                <#if chaptSections??>
+                    <#list chaptSections as item>
+                        <div class="chapter" style="padding: 0px ;border: none;">
+                            <a href="javascript:void(0);" class="js-open">
+                                <h3>
+                                    <strong>${item.name!}</strong>
+                                    <span class="drop-down">▼</span>
+                                </h3>
+                            </a>
+                            <ul class="chapter-sub" style="padding-left:10px;">
+                                <#if item.sections??>
+                                    <#list item.sections as section>
+                                        <a href="${s.base}/course/video/${section.id!}.html" >
+                                            <li class="ellipsis video-li"><i class="icon-video">▶</i> ${section.name!}</li>
+                                        </a>
+                                    </#list>
+                                </#if>
+                            </ul>
+                        </div>
+                    </#list>
+                </#if>
             </div>
         </div>
+
     </div>
     <!-- 章节-end -->
 </div>
+
 
 <!-- 页脚-start -->
 <div class="f-footer">
@@ -408,15 +317,18 @@
         );
     };
 
-    //发表评论
-    function doComment() {
-        var indeityCode = $('#indeityCode').val();
-        if($.trim(indeityCode).length == 0) {
-            $('#commentTip').css('color','red').html('验证码输入有误');
-        }
+    //提交
+    function doComment(){
+
         var content = $('#content').val();
         if($.trim(content).length > 200 || $.trim(content).length == 0){
             $('#commentTip').css('color','red').html('评论内容长度请 &gt; 0 , &lt; 200');
+            return;
+        }
+
+        var indeityCode = $('#indeityCode').val();
+        if($.trim(indeityCode).length == 0 ){
+            $('#commentTip').css('color','red').html('验证码输入有误');
             return;
         }
 
@@ -436,18 +348,19 @@
                     $('#commentTip').css('color','red').html('评论内容长度请 &gt; 0 , &lt; 200');
                 }
 
-                reloadIndityImg();
+                reloadIndityImg(content);
                 $('#indeityCode').val('');
                 $('#content').val('');
             },
             error : function(xhr) {
             }
-        })
+        });
     }
 
     //重新获取验证码
-    function reloadIndityImg(){
-        document.getElementById("indeityImg").src = CONTEXT_PATH + "/tools/identiry/code?ticket=" + Math.random();
+    function reloadIndityImg(content){
+        document.getElementById("indeityImg").src = "/tools/identiry/code.html?ticket=" + Math.random();
+        $('#content').attr(value, content);
     }
 
 </script>
