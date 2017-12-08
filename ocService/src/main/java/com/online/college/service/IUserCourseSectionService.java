@@ -1,5 +1,6 @@
 package com.online.college.service;
 
+import com.online.college.pojo.UserCollections;
 import com.online.college.pojo.UserCourseSection;
 
 public interface IUserCourseSectionService {
@@ -12,4 +13,8 @@ public interface IUserCourseSectionService {
      * @return
      */
     UserCourseSection queryLatest(Integer courseId, Integer userId, Integer sectionId);
+
+    void insert(UserCourseSection userCourseSection);
+
+    void updata(UserCourseSection userCourseSection);
 }

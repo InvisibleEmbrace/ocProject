@@ -173,7 +173,7 @@
                 AND user_id = #{userId}
             </if>
             <if test="sectionId != null">
-                section_id = #{sectionId}
+               AND section_id = #{sectionId}
             </if>
         </where>
         ORDER BY update_time DESC
