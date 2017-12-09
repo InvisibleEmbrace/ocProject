@@ -1,12 +1,11 @@
 package com.online.college.common.web;
 
-import javax.servlet.http.HttpServletRequest;
-
+import com.online.college.common.web.auth.SessionUser;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.subject.Subject;
 
-import com.online.college.common.web.auth.SessionUser;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * session工具类
@@ -16,10 +15,11 @@ public class SessionContext {
 	public static final String AUTH_USER_KEY = "_consts_auth_user_key_";// 其他人不得占用
 
 	public static Integer getUserId(){
-		/*if(null != getAuthUser()){
+		if(null != getAuthUser()){
 			return getAuthUser().getUserId();
-		}*/
-		return 1;
+		}
+		/*return 1;*/
+		return null;
 	}
 	
 	public static String getUsername(){

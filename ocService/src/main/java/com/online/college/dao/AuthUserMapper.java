@@ -22,6 +22,6 @@ public interface AuthUserMapper {
 
     AuthUser getByUsername(String username);
 
-    AuthUser getByUsernameAndPassword(@Param("username") String username, @Param("username") String password);
+    AuthUser getByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 
 }

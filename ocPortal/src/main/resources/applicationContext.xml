@@ -16,5 +16,6 @@
 
     <import resource="applicationContext-datasource.xml"/>
 
-
+    <!-- 引入shiro -->
+    <import resource="shiro.xml" />
 </beans>

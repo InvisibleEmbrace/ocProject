@@ -389,6 +389,13 @@
         SELECT
         <include refid="Base_Column_List"/>
         FROM t_auth_user
-        WHERE username = #{username} AND password = #{username}
+        <where>
+            <if test="username != null">
+                username = #{username}
+            </if>
+            <if test="password != null">
+                AND password = #{password}
+            </if>
+        </where>
     </select>
 </mapper>

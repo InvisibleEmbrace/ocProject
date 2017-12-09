@@ -40,8 +40,11 @@
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
 		<property name="unauthorizedUrl" value="/error/403.html" />
-		<property name="successUrl" value="http://www.ioswift.org/user/home.html" />
-		<property name="loginUrl" value="http://www.ioswift.org/auth/login.html" />
+		<!--<property name="successUrl" value="http://www.ioswift.org/user/home.html" />
+		<property name="loginUrl" value="http://www.ioswift.org/auth/login.html" />-->
+		<property name="successUrl" value="/" />
+		<property name="loginUrl" value="/auth/login.html" />
+
 		<property name="filters">
 			<map>
 				<entry key="authc" value-ref="authFilter" />
@@ -53,6 +56,7 @@
 				/res/** = anon
 				/tools/** = anon
 				/index.html* = anon
+				/index* = anon
 				/auth/** = anon
 				/auth/logout.html = logout 
 				
