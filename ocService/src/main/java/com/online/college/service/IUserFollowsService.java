@@ -1,5 +1,6 @@
 package com.online.college.service;
 
+import com.github.pagehelper.PageInfo;
 import com.online.college.pojo.UserFollows;
 
 import java.util.List;
@@ -14,4 +15,8 @@ public interface IUserFollowsService {
     void delete(Integer id);
 
     void insert(UserFollows userFollows);
+
+    List<UserFollows> getUserFollowList(Integer userId);
+
+    PageInfo queryFollowStudyRecord(Integer userId, Integer pageNum, Integer pageSize);
 }

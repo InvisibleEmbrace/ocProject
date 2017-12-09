@@ -138,4 +138,42 @@
             </if>
         </where>
     </select>
+    <select id="getUserFollowList" parameterType="int" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_user_follows
+        WHERE user_id = #{userId}
+    </select>
+
+    <select id="queryFollowStudyRecord" parameterType="integer"
+            resultType="com.online.college.pojo.UserFollowStudyRecord">
+      SELECT
+  cs.course_id,
+  cs.section_id,
+  f.follow_id,
+  c.name AS courseName,
+  s.name AS sectionName,
+  u.username,
+  u.header,
+  cs.create_time
+FROM
+  t_user_follows f, t_user_course_section cs, t_course c, t_course_section s, t_auth_user u
+WHERE f.user_id = #{userId}
+      AND f.follow_id = cs.user_id
+      AND f.del = 0
+      AND f.follow_id = u.id
+      AND cs.course_id = c.id
+      AND cs.section_id = s.id
+ORDER BY cs.id DESC
+
+    </select>
+
+    <select id="getFollowStudyRecordCount" parameterType="integer" resultType="int">
+        SELECT COUNT(cs.id)
+		FROM
+		t_user_follows f ,t_user_course_section cs
+		WHERE f.user_id = #{userId}
+		AND f.follow_id = cs.user_id
+		AND f.del = 0
+    </select>
 </mapper>
