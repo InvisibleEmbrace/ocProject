@@ -75,7 +75,7 @@ public class AuthController {
     @RequestMapping(value = "/ajaxlogin")
     public String ajaxLogin(AuthUser user, String identiryCode, Integer rememberMe, HttpServletRequest request) {
         //验证码判断
-        if (identiryCode != null && identiryCode.equalsIgnoreCase(SessionContext.getIdentifyCode(request))) {
+        if (identiryCode != null && !identiryCode.equalsIgnoreCase(SessionContext.getIdentifyCode(request))) {
             return JsonView.render(2, "验证码不正确!");
         }
         Subject currentUser = SecurityUtils.getSubject();

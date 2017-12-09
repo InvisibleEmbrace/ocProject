@@ -1,8 +1,11 @@
 package com.online.college.pojo;
 
-import java.util.Date;
+import com.online.college.common.web.auth.SessionUser;
 
-public class AuthUser {
+import java.util.Date;
+import java.util.Set;
+
+public class AuthUser implements SessionUser{
     private Integer id;
 
     private String realname;
@@ -79,6 +82,16 @@ public class AuthUser {
 
     public String getUsername() {
         return username;
+    }
+
+    @Override
+    public Integer getUserId() {
+        return this.getId();
+    }
+
+    @Override
+    public Set<String> getPermissions() {
+        return null;
     }
 
     public void setUsername(String username) {
