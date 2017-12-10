@@ -1,17 +1,14 @@
 package com.online.college.service.impl;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.online.college.dao.CourseMapper;
 import com.online.college.pojo.Course;
+import com.online.college.pojo.UserCourseSectionDto;
 import com.online.college.service.ICourseService;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -71,5 +68,13 @@ public class CourseServiceImpl implements ICourseService {
             PageHelper.startPage(pageNum, pageSize);
         }
         return courseMapper.queryCourseBySubClassify(subClassify);
+    }
+
+    @Override
+    public PageInfo queryMyCourse(Integer userId, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<UserCourseSectionDto> list = courseMapper.qureryMyCourse(userId);
+        PageInfo pageInfo = new PageInfo(list);
+        return pageInfo;
     }
 }

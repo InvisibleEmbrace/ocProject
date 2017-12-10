@@ -52,7 +52,7 @@
 		</property>
 		<property name="filterChainDefinitions">
 			<value>
-				<!--/error/** = anon
+				/error/** = anon
 				/res/** = anon
 				/tools/** = anon
 				/index.html* = anon
@@ -69,7 +69,7 @@
 				
 				/** = authc
 
-				/test* = anon-->
+				/test* = anon
 			</value>
 		</property>
 	</bean>

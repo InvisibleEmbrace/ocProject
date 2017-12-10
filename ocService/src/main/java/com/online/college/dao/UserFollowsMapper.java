@@ -26,4 +26,6 @@ public interface UserFollowsMapper {
     List<UserFollowStudyRecord> queryFollowStudyRecord(Integer userId);
 
     int getFollowStudyRecordCount(Integer userId);
+
+
 }

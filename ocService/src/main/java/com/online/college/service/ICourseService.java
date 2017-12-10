@@ -54,4 +54,13 @@ public interface ICourseService {
      * @return
      */
     List<Course> queryCourseBySubClassify(String subClassify,Integer pageNum,Integer pageSize);
+
+    /**
+     * 获取我的课程
+     * @param userId
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
+    PageInfo queryMyCourse(Integer userId, Integer pageNum, Integer pageSize);
 }

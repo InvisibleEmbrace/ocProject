@@ -1,5 +1,6 @@
 package com.online.college.service;
 
+import com.github.pagehelper.PageInfo;
 import com.online.college.pojo.UserCollections;
 
 import java.util.List;
@@ -30,4 +31,6 @@ public interface IUserCollectionsService {
      * @param userCollections
      */
     void insert(UserCollections userCollections);
+
+    PageInfo queryMyCollection(Integer userId, Integer pageNum, Integer pageSize);
 }

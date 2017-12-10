@@ -1,5 +1,6 @@
 <#if page?? && page?size gt 0>
 	<#if page.list?? && page.list?size gt 0>
+		<input type="hidden" id="_id_pageNum" name="pageNum" value="${page.pageNum}"/>
 		<div class="page-box clearfix">
 			<div class="page clearfix">
 				<div style="float:left;">
@@ -21,7 +22,7 @@
 							</#if>
 						</#if>
 					</#list>
-					<#if  page.nextPage gt page.pages>
+					<#if  page.nextPage gt page.pages-1>
 						<a class="page-next" href="javascript:void(0);"  onclick="_queryPage(${page.nextPage})">下一页</a>
 					</#if>
 					<a class="page-next" href="javascript:void(0);"  onclick="_queryPage(${page.lastPage!})">尾 页</a>
@@ -30,3 +31,18 @@
 		</div>
 	</#if>
 </#if>
+<script type="text/javascript">
+    function _queryPage(page){
+        if(page == undefined){
+            page = 1;
+        }
+        $('#_id_pageNum').val(page);
+
+        var query = $('#queryPageForm').attr('queryPage');
+        if(query && Number(query) == 1){
+            queryPage(page);
+        }else{
+            $('#queryPageForm').submit();
+        }
+    }
+</script>

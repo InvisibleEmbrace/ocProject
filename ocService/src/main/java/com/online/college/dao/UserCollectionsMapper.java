@@ -1,6 +1,7 @@
 package com.online.college.dao;
 
 import com.online.college.pojo.UserCollections;
+import com.online.college.pojo.UserCollectionsDto;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -21,4 +22,6 @@ public interface UserCollectionsMapper {
     List<UserCollections> getCollection(@Param("userId") Integer userId, @Param("classifyId") Integer classifyId, @Param("objectId") Integer objectId);
 
     void delete(UserCollections userCollections);
+
+    List<UserCollectionsDto> queryPage(Integer userId);
 }

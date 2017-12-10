@@ -170,4 +170,19 @@
         delete from t_user_collections
         where id = #{id,jdbcType=INTEGER}
     </delete>
+
+    <select id="queryPage" parameterType="int" resultType="com.online.college.pojo.UserCollectionsDto">
+       SELECT
+          uc.object_id,
+          uc.id,
+          c.name,
+          uc.create_time,
+          uc.classify,
+          uc.create_time
+        FROM t_user_collections uc, t_course c
+        WHERE uc.object_id = c.id
+              AND uc.classify = 1 AND uc.user_id = #{userId}
+        ORDER BY id DESC
+
+    </select>
 </mapper>

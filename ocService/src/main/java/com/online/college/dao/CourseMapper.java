@@ -1,6 +1,7 @@
 package com.online.college.dao;
 
 import com.online.college.pojo.Course;
+import com.online.college.pojo.UserCourseSectionDto;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -29,4 +30,6 @@ public interface CourseMapper {
     List<Course> queryCourseByClassify(@Param("curCode") String curCode, @Param("curSubCode") String curSubCode);
 
     List<Course> queryCourseBySubClassify(String subClassify);
+
+    List<UserCourseSectionDto> qureryMyCourse(Integer userId);
 }

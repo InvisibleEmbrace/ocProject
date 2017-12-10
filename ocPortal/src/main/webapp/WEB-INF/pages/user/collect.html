@@ -22,8 +22,8 @@
 				<div class="split-line" style="margin: 20px 0px;"></div>
 				
 				<form id="queryPageForm" action="">
-				<#if (page.items)??>
-				<#list page.items as item>
+				<#if (page.list)??>
+				<#list page.list as item>
 				<div class="comment clearfix">
 					<div class="comment-main" style="width: 100%">
 						<a href="${s.base}/course/learn/${item.objectId!}.html" target="_blank" class="user-name link-a" style="font-size:20px;">

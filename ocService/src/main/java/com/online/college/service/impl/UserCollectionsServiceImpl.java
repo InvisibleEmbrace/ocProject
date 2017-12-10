@@ -1,7 +1,10 @@
 package com.online.college.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.online.college.dao.UserCollectionsMapper;
 import com.online.college.pojo.UserCollections;
+import com.online.college.pojo.UserCollectionsDto;
 import com.online.college.service.IUserCollectionsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,4 +35,13 @@ public class UserCollectionsServiceImpl implements IUserCollectionsService{
     public void insert(UserCollections userCollections) {
         userCollectionsMapper.insertSelective(userCollections);
     }
+
+    @Override
+    public PageInfo queryMyCollection(Integer userId, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<UserCollectionsDto> list = userCollectionsMapper.queryPage(userId);
+        PageInfo pageInfo = new PageInfo(list);
+        return pageInfo;
+    }
+
 }

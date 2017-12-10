@@ -388,4 +388,14 @@
         WHERE sub_classify = #{subClassify}
         ORDER BY weight
     </select>
+    <select id="qureryMyCourse" parameterType="integer" resultType="com.online.college.pojo.UserCourseSectionDto">
+      SELECT
+      t.*,
+      c.name AS courseName,
+      s.name AS sectionName
+    FROM t_user_course_section t, t_course c, t_course_section s
+    WHERE t.course_id = c.id
+          AND t.section_id = s.id AND t.user_id = #{userId}
+    ORDER BY id DESC
+    </select>
 </mapper>
