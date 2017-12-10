@@ -70,7 +70,7 @@ public class CourseCommentController {
         }
 
         if (entity.getRefId() != null) {//来自于个人中心评论
-            CourseComment refComment = iCourseCommentService.getById(entity.getId());
+            CourseComment refComment = iCourseCommentService.getById(entity.getRefId());
             if (refComment != null) {
                 CourseSection courseSection = iCourseSectionService.getById(refComment.getSectionId());
 

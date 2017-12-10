@@ -1,6 +1,7 @@
 package com.online.college.dao;
 
 import com.online.college.pojo.CourseComment;
+import com.online.college.pojo.CourseCommentDto;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -19,4 +20,6 @@ public interface CourseCommentMapper {
     int updateByPrimaryKey(CourseComment record);
 
     List<CourseComment> queryList(@Param("courseId") Integer courseId, @Param("type") Integer type);
+
+    List<CourseCommentDto> queryCommentByUsername(String username);
 }

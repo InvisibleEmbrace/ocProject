@@ -32,4 +32,6 @@ public interface IAuthUserService {
      */
     void insert(AuthUser authUser);
 
+    void update(AuthUser authUser);
+
 }

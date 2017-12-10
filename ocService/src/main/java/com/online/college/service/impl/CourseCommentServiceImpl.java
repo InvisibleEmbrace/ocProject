@@ -1,12 +1,12 @@
 package com.online.college.service.impl;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.online.college.common.storage.QiniuStorage;
 import com.online.college.dao.CourseCommentMapper;
 import com.online.college.pojo.AuthUser;
 import com.online.college.pojo.CourseComment;
+import com.online.college.pojo.CourseCommentDto;
 import com.online.college.pojo.CourseSection;
 import com.online.college.service.IAuthUserService;
 import com.online.college.service.ICourseCommentService;
@@ -63,6 +63,14 @@ public class CourseCommentServiceImpl implements ICourseCommentService {
     @Override
     public void insertCourseComment(CourseComment courseComment) {
         courseCommentMapper.insertSelective(courseComment);
+    }
+
+    @Override
+    public PageInfo querCommentByUsername(String username, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<CourseCommentDto> list = courseCommentMapper.queryCommentByUsername(username);
+        PageInfo pageInfo = new PageInfo(list);
+        return pageInfo;
     }
 
 }

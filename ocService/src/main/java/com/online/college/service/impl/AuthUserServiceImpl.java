@@ -63,4 +63,9 @@ public class AuthUserServiceImpl implements IAuthUserService {
     public void insert(AuthUser authUser) {
         authUserMapper.insertSelective(authUser);
     }
+
+    @Override
+    public void update(AuthUser authUser) {
+        authUserMapper.updateByPrimaryKeySelective(authUser);
+    }
 }

@@ -1,13 +1,12 @@
 package com.online.college.service;
 
-import java.util.List;
+import com.github.pagehelper.PageInfo;
+import com.online.college.pojo.CourseComment;
+
 /**
  * /**
  * 课程评论&答疑
  */
-
-import com.github.pagehelper.PageInfo;
-import com.online.college.pojo.CourseComment;
 
 public interface ICourseCommentService {
 
@@ -27,4 +26,7 @@ public interface ICourseCommentService {
      */
     void insertCourseComment(CourseComment courseComment);
 
+    PageInfo querCommentByUsername(String username, Integer pageNum, Integer pageSize);
+
 }
+
