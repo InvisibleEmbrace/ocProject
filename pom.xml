@@ -12,6 +12,7 @@
         <module>ocPortal</module>
         <module>ocService</module>
         <module>ocCommon</module>
+        <module>ocOperator</module>
     </modules>
 
     <properties>

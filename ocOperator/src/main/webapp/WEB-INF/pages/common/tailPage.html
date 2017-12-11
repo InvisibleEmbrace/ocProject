@@ -1,0 +1,30 @@
+<ul class="pagination">
+	<input type="hidden" id="_id_pageNum" name="pageNum" value="${page.pageNum}"/>
+	<#if page.list??>
+		<li><a href="javascript:void(0);" onclick="_queryPage('1')">首页</a></li>
+		<#list page.navigatepageNums as n>
+			<#if n==page.pageNum>
+			<li class="active"><a href="javascript:void(0);" onclick="_queryPage('${n}');">${n}</a></li>
+			</#if>
+			<#if n!=page.pageNum>
+				<li><a href="javascript:void(0);" onclick="_queryPage('${n}');">${n}</a></li>
+			</#if>
+		</#list>
+		<li><a href="javascript:void(0);" onclick="_queryPage('${page.pages}')">尾页</a></li>
+	</#if>
+</ul>
+
+
+<script type="text/javascript">
+	function _queryPage(page){
+		if(page != undefined){
+			$('#_id_pageNum').val(page);
+		}
+		var query = $('#queryPageForm').attr('queryPage');
+		if(query && Number(query) == 1){
+			queryPage(page);
+		}else{
+			$('#queryPageForm').submit();
+		}
+	}
+</script>

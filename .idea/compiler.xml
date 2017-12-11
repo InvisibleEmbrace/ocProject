@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ocCommon" />
+        <module name="ocOperator" />
         <module name="ocPortal" />
         <module name="ocService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ocCommon" target="1.8" />
+      <module name="ocOperator" target="1.8" />
       <module name="ocPortal" target="1.8" />
       <module name="ocProject" target="1.8" />
       <module name="ocService" target="1.8" />
