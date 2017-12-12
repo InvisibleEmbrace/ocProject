@@ -19,4 +19,6 @@ public interface ConstsSiteCarouselMapper {
 
     List<ConstsSiteCarousel> queryCarousel(int count);
 
+    List<ConstsSiteCarousel> queryPage();
+
 }

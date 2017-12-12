@@ -7,27 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31843df9-a940-47b9-8cef-f60ee35dd843" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/business/IPortalBusiness.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/business/impl/PortalBusinessImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/AuthUserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/ClassifyController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/vo/ConstsClassifyVO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/SiteCarouselController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/lib/ocService-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/lib/ocService-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/dao/AuthUserMapper.class" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/dao/AuthUserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/IAuthUserService.class" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/IAuthUserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/IConstsClassifyService.class" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/IConstsClassifyService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/impl/AuthUserServiceImpl.class" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/impl/AuthUserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/impl/ConstsClassifyServiceImpl.class" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/impl/ConstsClassifyServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/dao/ConstsSiteCarouselMapper.class" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/dao/ConstsSiteCarouselMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/IConstsSiteCarouselService.class" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/IConstsSiteCarouselService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/impl/ConstsSiteCarouselImpl.class" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/service/impl/ConstsSiteCarouselImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/user/userPageList.html" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/user/userPageList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/user/userPageList.html" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/user/userPageList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/AuthUserMapper.java" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/AuthUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/mappers/AuthUserMapper.xml" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/mappers/AuthUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IAuthUserService.java" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IAuthUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsClassifyService.java" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsClassifyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/AuthUserServiceImpl.java" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/AuthUserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsClassifyServiceImpl.java" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsClassifyServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/dao/mappers/AuthUserMapper.xml" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/dao/mappers/AuthUserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/carousel/pagelist.html" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/carousel/pagelist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/carousel/pagelist.html" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/carousel/pagelist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/ConstsSiteCarouselMapper.java" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/ConstsSiteCarouselMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/mappers/ConstsSiteCarouselMapper.xml" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/mappers/ConstsSiteCarouselMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsSiteCarouselService.java" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsSiteCarouselService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsSiteCarouselImpl.java" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsSiteCarouselImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/dao/mappers/ConstsSiteCarouselMapper.xml" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/dao/mappers/ConstsSiteCarouselMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,38 +62,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthUserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/AuthUserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassifyController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClassifyController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/ClassifyController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
-              <caret line="68" column="41" lean-forward="true" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
+              <caret line="68" column="41" lean-forward="false" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classifyIndex.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/classify/classifyIndex.html">
+      <file leaf-file-name="SiteCarouselController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/SiteCarouselController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="merge.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/carousel/merge.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pagelist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/carousel/pagelist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IConstsSiteCarouselService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsSiteCarouselService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstsSiteCarouselImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsSiteCarouselImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="41" column="68" lean-forward="false" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+              <folding>
+                <element signature="e#1616#1617#0" expanded="true" />
+                <element signature="e#1686#1687#0" expanded="true" />
+                <element signature="e#2060#2061#0" expanded="true" />
+                <element signature="e#2123#2124#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstsSiteCarouselMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/ConstsSiteCarouselMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConstsSiteCarouselMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/mappers/ConstsSiteCarouselMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="169" column="4" lean-forward="false" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="4" />
+              <folding>
+                <marker date="1513052578234" expanded="true" signature="1358:1486" ph="select from t_consts_site_carousel" />
+                <marker date="1513052578234" expanded="true" signature="1576:1648" ph="delete from " />
+                <marker date="1513052578234" expanded="true" signature="1749:2189" ph="insert into t_consts_site_carousel... " />
+                <marker date="1513052578234" expanded="true" signature="4586:5785" ph="update t_con... " />
+                <marker date="1513052578234" expanded="true" signature="5900:6388" ph="update t_con... " />
+                <marker date="1513052578234" expanded="true" signature="6487:6599" ph="SELECT FROM t_consts_site_carousel" />
+                <marker date="1513052578234" expanded="true" signature="6677:6797" ph="SELECT FROM t_consts_site_carousel" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,67 +172,13 @@
       <file leaf-file-name="ConstsClassifyServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsClassifyServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="576">
               <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
               <folding>
                 <element signature="e#1118#1119#0" expanded="true" />
                 <element signature="e#1186#1187#0" expanded="true" />
                 <element signature="e#1238#1239#0" expanded="true" />
                 <element signature="e#1297#1298#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortalBusinessImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/business/impl/PortalBusinessImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPortalBusiness.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/business/IPortalBusiness.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseBusinessImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/business/impl/CourseBusinessImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortalBusinessImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/business/impl/PortalBusinessImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="84" column="5" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="84" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPortalBusiness.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/business/IPortalBusiness.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -258,12 +257,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/ICourseService.java" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/pojo/MyCollections.java" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/UserCollectionsMapper.java" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/UserCollectionsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ocPortal/src/main/resources/shiro.xml" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/pojo/UserCollectionsDto.java" />
         <option value="$PROJECT_DIR$/ocPortal/src/main/resources/mappers/UserCollectionsMapper.xml" />
         <option value="$PROJECT_DIR$/ocPortal/src/main/resources/mappers/CourseMapper.xml" />
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/CourseServiceImpl.java" />
@@ -309,6 +302,12 @@
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsClassifyService.java" />
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsClassifyServiceImpl.java" />
         <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/ClassifyController.java" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/ConstsSiteCarouselMapper.java" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/mappers/ConstsSiteCarouselMapper.xml" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsSiteCarouselService.java" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/SiteCarouselController.java" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/carousel/pagelist.html" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsSiteCarouselImpl.java" />
       </list>
     </option>
   </component>
@@ -407,6 +406,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -547,6 +550,18 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="carousel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
               <item name="classify" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -644,10 +659,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -669,9 +680,15 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEAwork\ocProject\ocPortal\src\main\webapp\res" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.online.college.service.impl" />
       <recent name="com.online.college" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.online.college.ov" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEAwork\ocProject\ocOperator\src\main\java\com\online\college\vo" />
@@ -679,12 +696,6 @@
       <recent name="D:\IDEAwork\ocProject\ocOperator\src\main\java\com\online\college\controller" />
       <recent name="D:\IDEAwork\ocProject\ocOperator\src\main\webapp\WEB-INF" />
       <recent name="D:\IDEAwork\ocProject\ocOperator\src\main\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.online.college.ov" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEAwork\ocProject\ocPortal\src\main\webapp\res" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -972,6 +983,7 @@
       <workItem from="1512980120217" duration="5972000" />
       <workItem from="1512986702434" duration="13000" />
       <workItem from="1512989593668" duration="5525000" />
+      <workItem from="1513048461120" duration="1968000" />
     </task>
     <task id="LOCAL-00001" summary="新增shiro">
       <created>1512807415576</created>
@@ -1005,7 +1017,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277210000" />
+    <option name="totallyTimeSpent" value="279178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1018,6 +1030,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1033,18 +1046,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30965006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30965006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23966065" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26086956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26086956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29374337" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20628998" sideWeight="0.49204665" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.49204665" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21108742" sideWeight="0.504749" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18869936" sideWeight="0.50795335" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1211,44 +1224,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ocOperator/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="78" column="28" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="78" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/ftl/spring.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/resources/shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="71" column="32" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="71" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/UserTestController.java" />
     <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/CmsController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1303,24 +1278,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsSiteCarouselImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/ICourseCommentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsSiteCarouselService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1395,7 +1356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="57" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1403,7 +1363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,7 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="150" column="45" lean-forward="false" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,9 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1454,7 +1409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1462,7 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1507,7 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1515,7 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1531,7 +1482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="37" column="77" lean-forward="false" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1539,10 +1489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#329#345#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1564,15 +1510,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/business/impl/PortalBusinessImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="1278">
+          <caret line="84" column="5" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="84" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/business/IPortalBusiness.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="288">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1582,8 +1528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/business/impl/PortalBusinessImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="936">
+          <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1600,7 +1546,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/AuthUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
+        <state relative-caret-position="918">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1618,7 +1564,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsClassifyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="576">
           <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
           <folding>
             <element signature="e#1118#1119#0" expanded="true" />
@@ -1632,11 +1578,80 @@
     <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/ClassifyController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="68" column="41" lean-forward="true" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
+          <caret line="68" column="41" lean-forward="false" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/mappers/ConstsSiteCarouselMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="169" column="4" lean-forward="false" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="4" />
+          <folding>
+            <marker date="1513052578234" expanded="true" signature="1358:1486" ph="select from t_consts_site_carousel" />
+            <marker date="1513052578234" expanded="true" signature="1576:1648" ph="delete from " />
+            <marker date="1513052578234" expanded="true" signature="1749:2189" ph="insert into t_consts_site_carousel... " />
+            <marker date="1513052578234" expanded="true" signature="4586:5785" ph="update t_con... " />
+            <marker date="1513052578234" expanded="true" signature="5900:6388" ph="update t_con... " />
+            <marker date="1513052578234" expanded="true" signature="6487:6599" ph="SELECT FROM t_consts_site_carousel" />
+            <marker date="1513052578234" expanded="true" signature="6677:6797" ph="SELECT FROM t_consts_site_carousel" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/dao/ConstsSiteCarouselMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/carousel/pagelist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/carousel/merge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/controller/SiteCarouselController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/IConstsSiteCarouselService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/service/impl/ConstsSiteCarouselImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="41" column="68" lean-forward="false" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+          <folding>
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2123#2124#0" expanded="true" />
           </folding>
         </state>
       </provider>
