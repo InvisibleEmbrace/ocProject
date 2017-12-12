@@ -24,4 +24,7 @@ public interface AuthUserMapper {
 
     AuthUser getByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 
+    List<AuthUser> queryPage(@Param("username") String username, @Param("status") Integer status);
+
+
 }

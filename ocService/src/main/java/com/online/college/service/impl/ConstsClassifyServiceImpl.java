@@ -31,4 +31,15 @@ public class ConstsClassifyServiceImpl implements IConstsClassifyService {
         ConstsClassify classify = constsClassifyMapper.getByCode(code);
         return classify;
     }
+
+    @Override
+    public void insert(ConstsClassify constsClassify) {
+        constsClassifyMapper.insertSelective(constsClassify);
+    }
+
+    @Override
+    public void delete(Integer id) {
+        constsClassifyMapper.deleteByPrimaryKey(id);
+    }
+
 }

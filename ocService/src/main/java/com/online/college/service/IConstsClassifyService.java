@@ -24,4 +24,7 @@ public interface IConstsClassifyService {
      */
     ConstsClassify getByCode(String code);
 
+    void insert(ConstsClassify constsClassify);
+
+    void delete(Integer id);
 }

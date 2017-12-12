@@ -1,5 +1,6 @@
 package com.online.college.service;
 
+import com.github.pagehelper.PageInfo;
 import com.online.college.pojo.AuthUser;
 
 import java.util.List;
@@ -34,4 +35,5 @@ public interface IAuthUserService {
 
     void update(AuthUser authUser);
 
+    PageInfo queryPage(String username, Integer status, Integer pageNum, Integer pageSize);
 }

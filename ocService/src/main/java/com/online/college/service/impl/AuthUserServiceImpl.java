@@ -1,6 +1,7 @@
 package com.online.college.service.impl;
 
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.online.college.common.storage.QiniuStorage;
 import com.online.college.dao.AuthUserMapper;
 import com.online.college.pojo.AuthUser;
@@ -67,5 +68,13 @@ public class AuthUserServiceImpl implements IAuthUserService {
     @Override
     public void update(AuthUser authUser) {
         authUserMapper.updateByPrimaryKeySelective(authUser);
+    }
+
+    @Override
+    public PageInfo queryPage(String username, Integer status, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<AuthUser> list = authUserMapper.queryPage(username, status);
+        PageInfo pageInfo = new PageInfo(list);
+        return pageInfo;
     }
 }

@@ -398,4 +398,17 @@
             </if>
         </where>
     </select>
+    <select id="queryPage" parameterType="map" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM t_auth_user
+        <where>
+            <if test="username != null">
+                username LIKE "%"#{username}"%"
+            </if>
+            <if test="status != null">
+                AND status = #{status}
+            </if>
+        </where>
+    </select>
 </mapper>
